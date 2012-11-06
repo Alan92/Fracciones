@@ -26,6 +26,10 @@ it "Se debe invocar al metodo denom() para obtener el numerador" do
 @frac_obj_1.denom.should==1
 end
 
+it "Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el numerador y b el denominador" do
+@frac_obj_2.mostrar.should=="Fraction 1/2"
+end
+
 end
 
 

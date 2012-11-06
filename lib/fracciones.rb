@@ -14,6 +14,10 @@ end
 return d.max
 end
 
+def mostrar
+"Fraction #{num}/#{denom}"
+end
+
 end
 
 
