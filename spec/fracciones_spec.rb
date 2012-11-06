@@ -18,6 +18,9 @@ it "Debe de estar en su forma reducida" do
 @frac_obj_2.denom.should==2
 end
 
+it "Se debe invocar al metodo num() para obtener el numerador" do
+@frac_obj_1.num.should==1
+end
 end
 
 
