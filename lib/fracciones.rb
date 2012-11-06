@@ -22,6 +22,10 @@ def to_f
 float=@num/@denom
 end
 
+def ==(other)
+@num==other.num and @denom==other.denom
+end
+
 end
 
 
