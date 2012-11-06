@@ -4,6 +4,7 @@ before :each do
 @frac_obj_1=Frac.new(0,1)
 @frac_obj_2=Frac.new(2,4)
 @frac_obj_3=Frac.new(0,1)
+@frac_obj_4=Frac.new(-4,5)
 end
 
 it " Debe existir un numerador" do
@@ -37,6 +38,10 @@ end
 
 it "Se debe comparar si dos fracciones son iguales con ==" do
 @frac_obj_1.should==@frac_obj_3
+end
+
+it "Se debe calcular el valor absoluto de una fraccion con el metodo abs" do
+@frac_obj_4.abs.should==(4/5)
 end
 
 end

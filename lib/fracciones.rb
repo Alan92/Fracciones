@@ -26,6 +26,14 @@ def ==(other)
 @num==other.num and @denom==other.denom
 end
 
+def abs
+if @num < 0 or @denom < 0
+float=(-1)*@num/@denom
+elsif 
+float=@num/@denom
+end
+end
+
 end
 
 
