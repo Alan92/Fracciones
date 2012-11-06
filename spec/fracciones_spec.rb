@@ -30,6 +30,10 @@ it "Se debe mostar por la consola la fraccion de la forma: a/b, donde a es el nu
 @frac_obj_2.mostrar.should=="Fraction 1/2"
 end
 
+it "Se debe mostar por la consola la fraccion en formato flotante" do
+@frac_obj_1.to_f.should==(0/1)
+end
+
 end
 
 

@@ -18,6 +18,10 @@ def mostrar
 "Fraction #{num}/#{denom}"
 end
 
+def to_f
+float=@num/@denom
+end
+
 end
 
 
