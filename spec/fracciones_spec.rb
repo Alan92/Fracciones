@@ -48,6 +48,10 @@ it " Se debe calcular el reciproco de una fraccion con el metodo reciprocal" do
 @frac_obj_2.reciprocal.should=="Fraction 2/1"
 end
 
+it "Se debe calcular el opuesto de una fraccion con -" do
+@frac_obj_2.-.should=="Fraction -1/2"
+end
+
 end
 
 
