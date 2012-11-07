@@ -70,5 +70,9 @@ it "Se debe dividir dos fracciones con / y dar el resultado de forma reducida" d
 @frac_obj_2./(@frac_obj_5).should=="Fraction 1/1"
 end
 
+it " Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida" do
+@frac_obj_2.%(@frac_obj_4).should=="Fraction -3/10"
+end
+
 end
 
