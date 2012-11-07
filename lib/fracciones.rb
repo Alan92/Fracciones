@@ -94,5 +94,11 @@ denom2=denom2/d
 "Fraction #{num2}/#{denom2}"
 
 end
+include Comparable
+def <=>(other)
+@num/@denom <=> other.num/other.denom
+end
+
+
 
 end
