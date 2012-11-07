@@ -5,6 +5,8 @@ before :each do
 @frac_obj_2=Frac.new(2,4)
 @frac_obj_3=Frac.new(0,1)
 @frac_obj_4=Frac.new(-4,5)
+@frac_obj_5=Frac.new(2,4)
+
 end
 
 it " Debe existir un numerador" do
@@ -51,6 +53,11 @@ end
 it "Se debe calcular el opuesto de una fraccion con -" do
 @frac_obj_2.-.should=="Fraction -1/2"
 end
+
+it "Se debe sumar dos fracciones con + y dar el resultado de forma reducida" do
+@frac_obj_2.+(@frac_obj_5).should=="Fraction 1/1"
+end
+
 
 end
 

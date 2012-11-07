@@ -45,6 +45,17 @@ def -
 "Fraction #{-num}/#{denom}"
 end
 
+def +(other)
+num2=@num*other.denom+other.num*@denom
+denom2=@denom*other.denom
+d=mcd(num2, denom2)
+num2=num2/d
+denom2=denom2/d
+"Fraction #{num2}/#{denom2}"
+end
+
+
+
 end
 
 
